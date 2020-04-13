@@ -1,0 +1,31 @@
+functionalities in project:
+-----------------------------
+>Admin:
+	>add product 
+	>search product
+	>create accounts for salesman
+	>delete accounts for salesman
+	>view all salesman
+
+Salesman:
+	>search product
+	>billing
+	>change password
+
+Tables:
+--------
+>salesman:
+	salesman_id
+	salesman_name
+	salesman_pass
+	salesman_mob
+	salesman_email
+>product:
+	product_id
+	product_name
+	product_qty
+	product_price
+	
+
+
+

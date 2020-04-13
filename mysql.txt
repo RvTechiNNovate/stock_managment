@@ -1,0 +1,39 @@
+mysql: [Warning] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe: ignoring option '--no-beep' due to invalid value ''.
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 8.0.19 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database stock;
+Query OK, 1 row affected (0.21 sec)
+
+mysql> create table salesman(s_id int(2),s_pass varchar(20),s_name varchar(20),s_mob varchar(10),s_email varchar(30));
+ERROR 1046 (3D000): No database selected
+mysql> use stock;
+Database changed
+mysql> create table salesman(s_id int(2),s_pass varchar(20),s_name varchar(20),s_mob varchar(10),s_email varchar(30));
+Query OK, 0 rows affected, 1 warning (1.14 sec)
+
+mysql> insert into salesman values(1,'aa','aa','11','aa@gmail.com');
+Query OK, 1 row affected (0.19 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from salesman;
++------+--------+--------+-------+--------------+
+| s_id | s_pass | s_name | s_mob | s_email      |
++------+--------+--------+-------+--------------+
+|    1 | aa     | aa     | 11    | aa@gmail.com |
++------+--------+--------+-------+--------------+
+1 row in set (0.00 sec)
+
+mysql>
